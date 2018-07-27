@@ -1,0 +1,99 @@
+@space: 2%;
+@color: #333;
+@smartphones: ~"only screen and (max-width: 599px)";
+@Tablets: ~"only screen and (min-width: 600px) and (max-width: 899px)";
+@misc: ~"only screen and (min-width: 900px) and (max-width: 1200px)";
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row{
+    .column-filter {
+        width: 25%;
+        float: left;
+        padding: @space;
+        padding-top: 0;
+        margin: 0;
+        height: 10000vh;
+        box-shadow: 0 0 5px 2px @color;
+        @media @smartphones {
+            width: 88%;
+            height: 100%;
+            margin: @space;
+            padding: @space*2;
+        }
+        
+        .color {
+            div {
+                float: left;
+                margin: @space*2.5;
+                height: 25px;
+                width: 25px;
+                border: 1px solid @color*4;
+                padding: @space*0.2;
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 5px 1px @color;
+                }
+            }
+        }
+    }
+    .column-products {
+        width: 65%;
+        float: left;
+        margin: @space;
+        margin-top: 0;
+        @media @smartphones {
+            width: 94%;
+            text-align: center;
+        }
+        hr {
+            margin-bottom: @space*3;
+        }
+        #products {
+            .product-item{
+                @media @smartphones {
+                    width: 94%;
+                    text-align: center;
+                }
+                float: left;
+                height: 350px;
+                padding: @space;
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 5px 1px @color;
+                }
+                .item-title {
+                    width: 250px;
+                    text-align: center;
+                    @media @smartphones {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                .div-info {
+                    display: none;
+                    .colordiv {
+                        height: 20px;
+                        margin-left: 35%;
+                        margin-right: 35%;
+                        @media @smartphones {
+                            margin-left: 40%;
+                            margin-right: 40%;
+                        }
+                        .item_color{
+                            margin: @space*2;
+                            float: left;
+                            width: 15px;
+                            height: 15px;
+                            border: 1px solid @color;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

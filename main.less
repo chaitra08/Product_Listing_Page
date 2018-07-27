@@ -1,0 +1,365 @@
+@background-color: #333;
+@space: 2%;
+@small: 12px;
+@smartphones: ~"only screen and (max-width: 599px)";
+@Tablets: ~"only screen and (min-width: 600px) and (max-width: 899px)";
+@misc: ~"only screen and (min-width: 900px) and (max-width: 1200px)";
+body {
+    margin:0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: sticky;
+    top: 0; 
+    z-index: 2;
+    .nav {
+        position: relative;
+        background-color: @background-color;
+        overflow: hidden;
+        margin: 0;
+        @media @smartphones {
+            -webkit-padding-start: 10px;
+        }
+        li {
+            float: left;
+            list-style-type: none;
+            padding: @space*0.2;
+            @media @Tablets {
+                padding: @space*0.1;
+            }
+            @media @smartphones {
+                padding: @space*0.1;
+            }
+        }
+        .logo {
+            img {
+                height: 45px;
+                width: 45px;
+                @media @Tablets {
+                    height: 40px;
+                    width: 40px;
+                }
+                @media @smartphones {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+        }
+        .menu {
+            ul {
+                @media @smartphones {
+                    -webkit-padding-start: 10px;
+                }
+                li {
+                    padding: 14px;
+                    &:hover {
+                        background-color: @background-color*0.4;
+                    }
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 100%;
+                        font-family: 'Allerta Stencil';
+                        
+                    }
+                    @media @Tablets {
+                        font-size: @small;
+                        
+                    }
+                    @media @smartphones {
+                        font-size: @small;
+                    }
+                }
+    
+            }
+            
+        }
+        .search {
+            position: absolute;
+            right: 20%;
+            top: 10%;
+            @media @smartphones {
+                display: none;
+            }
+            input {
+                background-image: url('Images/searchicon.png');
+                background-size: 30px 30px;
+                background-repeat: no-repeat;
+                padding-left: 35px;
+                font-size: 100%;
+                height: 26px;
+                @media @Tablets {
+                    font-size: @small;
+                    height: 20px;
+                    background-size: 25px 25px;
+                }
+                @media @smartphones {
+                    font-size: @small;
+                }
+            }
+        }
+        .cart {
+            img {
+                height: 45px;
+                width: 45px;
+                position: absolute;
+                right: 15%;
+                top: 15%;
+                @media @Tablets {
+                    right: 10%;
+                    top: 2%;
+                }
+                @media @smartphones {
+                    height: 35px;
+                    width: 35px;
+                    
+                }
+            }
+        }
+
+    }
+    .cartmsg {
+        display: none;
+        background-color: @background-color*2;
+        overflow: hidden;
+        padding: @space*0.2;
+        p {
+            text-align: right;
+            color: white;
+            font-family: 'Allerta Stencil';
+            @media @Tablets, @smartphones {
+                font-size: @small;
+            }
+        }
+    }
+    .row-discount {
+        background-color: @background-color*2;
+        overflow: hidden;
+        p {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            text-align: center;
+            @media @Tablets, @smartphones {
+                font-size: @small;
+            }
+            
+        }
+        span:hover {
+            color: @background-color*0.2;
+            cursor: pointer;
+            
+        }
+    }
+}
+.content {
+    .headImg {
+        max-width: 1440px;
+        img{
+            width: 100%;
+            @media @Tablets, @smartphones {
+                margin: @space;
+                width: 96%;
+            }
+        }
+        .headImgDesc {
+            text-align: center;
+            @media @Tablets, @smartphones {
+                font-size: @small;
+            }
+            span {
+                font-size: 22px;
+                @media @Tablets, @smartphones {
+                    font-size: @small*1.7;
+                }
+            }
+            .button{
+                background-color: rgba(0,0,0,0);
+                border: 5px solid @background-color;
+                border-style: double;
+                font-size: 16px;
+                @media @Tablets, @smartphones {
+                    font-size: @small;
+                }
+                &:hover {
+                    transform: scale(1.2);
+                    box-shadow: 0 0 5px 1px @background-color;
+                }
+                a{
+                    text-decoration: none;
+                    color: @background-color;
+                }
+            }
+        }
+    }
+    .newArv{
+        h3{
+            background-image: url('Images/strip.jpg');
+            overflow: hidden;
+            padding: @space*0.5;
+            color: white;
+            text-align: center;
+
+        }
+        .containerMedium {
+            margin: @space*0.5;
+            img {
+                width: 32.3%;
+                height: 40vh;
+                @media @Tablets {
+                    width: 48.7%;
+                }
+                @media @smartphones {
+                    width: 98.5%;
+                }
+                @media @misc {
+                    width: 32.2%;
+                }
+                margin: @space*0.2;
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 5px 1px @background-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .sale {
+        img {
+            width: 97%;
+            margin: @space*0.7;
+        }
+    }
+    .sportWorkout {
+        position: relative;
+        margin: @space*0.5;
+        .wcKit {
+            margin: @space*0.2;
+            width: 32%;
+            height: 65vh;
+            @media @Tablets {
+                height: 45vh;
+            }
+            @media @smartphones {
+                width: 98.5%;
+                height: auto;
+            }
+        }
+        .workout {
+            margin: @space*0.2;
+            width: 66%;
+            height: 65vh;
+            @media @Tablets {
+                height: 45vh;
+                width: 65.5%;
+            }
+            @media @smartphones {
+                width: 98.5%;
+                height: auto;
+            }
+            @media @misc {
+                width: 65.5%;
+            }
+        }
+        #spanWC {
+            position: absolute;
+            top: 65%;
+            left: 16%;
+            @media @smartphones {
+                top: 39%;
+                left: 56%;
+                
+            }
+            @media @Tablets {
+                font-size: @small;
+            }
+            color: white;
+            font-family: 'Allerta Stencil'
+        }
+        #buttonWC {
+            position: absolute;
+            top: 72%;
+            left: 19%;
+            @media @smartphones {
+                top: 44%;
+                left: 63%;
+            }
+            @media @Tablets {
+                font-size: @small;
+            }
+            background-color: rgba(0,0,0,0);
+            border: 5px solid white;
+            border-style: double;
+            color: white;
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 0 0 5px 1px @background-color*10;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+        #spanWO {
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            @media @smartphones {
+                top: 78%;
+                left: 10%;
+                font-size: @small;
+            }
+            @media @Tablets {
+                font-size: @small;
+            }
+            color: white;
+            font-family: 'Allerta Stencil'
+        }
+        #buttonWO {
+            position: absolute;
+            top: 27%;
+            left: 47%;
+            @media @smartphones {
+                top: 82%;
+                left: 14%;
+                font-size: @small;
+            }
+            @media @Tablets {
+                font-size: @small;
+            }
+            background-color: rgba(0,0,0,0);
+            border: 5px solid white;
+            border-style: double;
+            color: white;
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 0 0 5px 1px @background-color*10;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    .brands {
+        margin-top: @space*0.5;
+        h3 {
+            background-image: url('Images/strip.jpg');
+            overflow: hidden;
+            padding: @space*0.7;
+            color: white;
+            text-align: center;
+            
+        }
+        img {
+            width: 15%;
+            height: 20vh;
+            margin-left: @space*6.5;
+            @media @smartphones {
+                width: 97%;
+            }
+        }
+    }
+    
+}

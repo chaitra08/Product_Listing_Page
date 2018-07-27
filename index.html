@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Online Shopping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="javascript/cart.js"></script>
+</head>
+<body>
+    <!-- for the navigation bar-->
+   <div class="navbar">
+       <ul class="nav">
+           <!-- for the dummy logo-->
+           <li class="logo">
+               <a href="index.html"><img src="Images/logo.jpg"></a>
+           </li>
+           <li class="menu">
+                <ul>
+                    <li><a href="templates/men.html">MEN</a></li>
+                    <li><a href="templates/women.html">WOMEN</a></li>
+                    <li><a href="templates/sports.html">SPORTS</a></li>
+                </ul>
+           </li>
+           <li class="search">
+                <input type="text" name="search" placeholder="Search">
+           </li>
+           <li class="cart">
+                <img src="Images/cart.png">
+           </li>
+       </ul>
+       <div class="cartmsg">
+            <p>Your cart is empty!!!</p>
+        </div>
+        <!-- for exclusive discount information, dummy text entered-->
+       <div class="row-discount">
+            <p>GET <span>5%</span> OFF ON YOUR 1ST ORDER!!! APPLY COUPON <span>CHAI423</span> </p>
+        </div>
+   </div> 
+
+   <div class="content">
+        <div class="headImg">
+            <!-- section for an aexclusive new item -->
+            <img src="Images/headShoe.jpg">
+            <div class="headImgDesc">
+                <h2>The new <span>JORDAN</span> is here!</h2>
+                <button class="button"><a href="templates/men.html">SHOP NOW</a></button>
+            </div>
+        </div>
+        <!-- section for new arrivals-->
+        <div class="newArv">
+            <h3>NEW ARRIVALS</h3>
+            <div class="containerMedium">
+                <img src="Images/adidas.jpg" alt="">
+                <img src="Images/puma.jpg" alt="">
+                <img src="Images/nike.jpg" alt="">
+            </div> 
+        </div>
+        <!-- sale section-->
+        <div class="sale">
+            <img src="Images/summer_sale.jpg" alt="">
+        </div>
+        <!-- sports and workout section-->
+        <div class="sportWorkout">
+                <img class= "wcKit" src="Images/wckit.jpg" alt="">
+                <span id="spanWC">WORLD CUP FEVER!!</span>
+                <button id="buttonWC"><a href="templates/men.html">SHOP MEN</a></button>
+                <img class="workout" src="Images/workout.jpg" alt="">
+                <span id="spanWO">SUMMER FITNESS AT YOUR DOORSTEP</span>
+                <button id="buttonWO">SHOP WOMEN</button>
+        </div>
+        <!-- available brand section-->
+        <div class="brands">
+            <h3>FEATURED BRANDS</h3>
+            <img src="Images/logo/adidas-logo.png" alt="">
+            <img src="Images/logo/nike-logo.png" alt="">
+            <img src="Images/logo/puma-logo.png" alt="">
+        </div>
+   </div>
+   <script>
+   </script>
+</body>
+</html>

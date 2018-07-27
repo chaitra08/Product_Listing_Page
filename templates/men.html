@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/men.css"/>
+
+    <script src="../javascript/men.js"></script>
+    <script src="../javascript/cart.js"></script>
+</head>
+<body>
+    <div class="navbar">
+       <ul class="nav">
+           <li class="logo">
+                <a href="../index.html"><img src="../Images/logo.jpg"></a>
+           </li>
+           <li class="menu">
+                <ul>
+                    <li><a href="men.html">MEN</a></li>
+                    <li><a href="women.html">WOMEN</a></li>
+                    <li><a href="sports.html">SPORTS</a></li>
+                </ul>
+           </li>
+           <li class="search">
+                <input type="text" name="search" placeholder="Search">
+           </li>
+           <li class="cart">
+                <img src="../Images/cart.png">
+           </li>
+       </ul>
+        <div class="cartmsg">
+           <p>Your cart is empty!!!</p>
+       </div>
+       <div class="row-discount">
+            <p>GET <span>5%</span> OFF ON YOUR 1ST ORDER!!! APPLY COUPON <span>CHAI423</span> </p>
+       </div>
+    </div> 
+    <div class="row">
+        <div class="column-filter">
+            <!-- the filter section -->
+            <h2 class="header-filter">Filter</h2>
+            <hr>
+            <div id="filter">
+                <!-- filter for type, already checked-->
+                <div class="type"> 
+                    <h4>Select Type</h4> 
+                    <input id="shoe" type="checkbox" value="shoe">
+                    <label for="shoe">Shoes</label> <br>
+                    <input id="tshirt" type="checkbox" value="tshirt"> 
+                    <label for="tshirt">T-shirt and Tops</label> 
+                    <hr>   
+                </div>
+                <!-- filter for brands-->
+                <div class="brands">
+                    <h4>Select Brand</h4>
+                    <input id="adidas" type="checkbox" value="adidas">
+                    <label for="adidas">adidas</label> <br>
+                    <input id="nike" type="checkbox" value="nike">
+                    <label for="nike">nike</label> <br>
+                    <input id="puma" type="checkbox" value="puma">
+                    <label for="puma">puma</label> <br>
+                    <hr>
+                </div>
+                <!-- filter for colors -->
+                <div class="color">
+                        <h4>Select Color</h4>
+                        <div class="white" style="background-color: white;"></div>
+                        <div class="red" style="background-color: red;"></div>
+                        <div class="black" style="background-color: black;"></div>
+                        <div class="grey" style="background-color: grey;"></div>
+                        <div class="green" style="background-color: green;"></div>
+                        <div class="yellow" style="background-color: yellow;"></div>
+                        <div class="orange" style="background-color: orange;"></div>
+                        <div class="blue" style="background-color: blue;"></div>
+                        <div class="purple" style="background-color: purple;"></div>
+                        <div class="maroon" style="background-color: maroon;"></div>
+                </div>              
+            </div>
+        </div>
+        <div class="column-products">
+            <!-- div to hold the complete product section-->
+            <h2 class="header"></h2>
+            <hr>
+            <div id="products"></div>
+            <!-- to hold each product item -->
+        </div>
+    </div>
+</body>
+</html>

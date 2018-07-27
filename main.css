@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.navbar .nav {
+  position: relative;
+  background-color: #333;
+  overflow: hidden;
+  margin: 0;
+}
+@media only screen and (max-width: 599px) {
+  .navbar .nav {
+    -webkit-padding-start: 10px;
+  }
+}
+.navbar .nav li {
+  float: left;
+  list-style-type: none;
+  padding: 0.4%;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .navbar .nav li {
+    padding: 0.2%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .navbar .nav li {
+    padding: 0.2%;
+  }
+}
+.navbar .nav .logo img {
+  height: 45px;
+  width: 45px;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .navbar .nav .logo img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .navbar .nav .logo img {
+    height: 35px;
+    width: 35px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .navbar .nav .menu ul {
+    -webkit-padding-start: 10px;
+  }
+}
+.navbar .nav .menu ul li {
+  padding: 14px;
+}
+.navbar .nav .menu ul li:hover {
+  background-color: #141414;
+}
+.navbar .nav .menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: 'Allerta Stencil';
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .navbar .nav .menu ul li {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .navbar .nav .menu ul li {
+    font-size: 12px;
+  }
+}
+.navbar .nav .search {
+  position: absolute;
+  right: 20%;
+  top: 10%;
+}
+@media only screen and (max-width: 599px) {
+  .navbar .nav .search {
+    display: none;
+  }
+}
+.navbar .nav .search input {
+  background-image: url('Images/searchicon.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  font-size: 100%;
+  height: 26px;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .navbar .nav .search input {
+    font-size: 12px;
+    height: 20px;
+    background-size: 25px 25px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .navbar .nav .search input {
+    font-size: 12px;
+  }
+}
+.navbar .nav .cart img {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  right: 15%;
+  top: 15%;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .navbar .nav .cart img {
+    right: 10%;
+    top: 2%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .navbar .nav .cart img {
+    height: 35px;
+    width: 35px;
+  }
+}
+.navbar .cartmsg {
+  display: none;
+  background-color: #666666;
+  overflow: hidden;
+  padding: 0.4%;
+}
+.navbar .cartmsg p {
+  text-align: right;
+  color: white;
+  font-family: 'Allerta Stencil';
+}
+@media only screen and (min-width: 600px) and (max-width: 899px), only screen and (max-width: 599px) {
+  .navbar .cartmsg p {
+    font-size: 12px;
+  }
+}
+.navbar .row-discount {
+  background-color: #666666;
+  overflow: hidden;
+}
+.navbar .row-discount p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px), only screen and (max-width: 599px) {
+  .navbar .row-discount p {
+    font-size: 12px;
+  }
+}
+.navbar .row-discount span:hover {
+  color: #0a0a0a;
+  cursor: pointer;
+}
+.content .headImg {
+  max-width: 1440px;
+}
+.content .headImg img {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px), only screen and (max-width: 599px) {
+  .content .headImg img {
+    margin: 2%;
+    width: 96%;
+  }
+}
+.content .headImg .headImgDesc {
+  text-align: center;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px), only screen and (max-width: 599px) {
+  .content .headImg .headImgDesc {
+    font-size: 12px;
+  }
+}
+.content .headImg .headImgDesc span {
+  font-size: 22px;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px), only screen and (max-width: 599px) {
+  .content .headImg .headImgDesc span {
+    font-size: 20.4px;
+  }
+}
+.content .headImg .headImgDesc .button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px solid #333;
+  border-style: double;
+  font-size: 16px;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px), only screen and (max-width: 599px) {
+  .content .headImg .headImgDesc .button {
+    font-size: 12px;
+  }
+}
+.content .headImg .headImgDesc .button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px 1px #333;
+}
+.content .headImg .headImgDesc .button a {
+  text-decoration: none;
+  color: #333;
+}
+.content .newArv h3 {
+  background-image: url('Images/strip.jpg');
+  overflow: hidden;
+  padding: 1%;
+  color: white;
+  text-align: center;
+}
+.content .newArv .containerMedium {
+  margin: 1%;
+}
+.content .newArv .containerMedium img {
+  width: 32.3%;
+  height: 40vh;
+  margin: 0.4%;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .content .newArv .containerMedium img {
+    width: 48.7%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .content .newArv .containerMedium img {
+    width: 98.5%;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .content .newArv .containerMedium img {
+    width: 32.2%;
+  }
+}
+.content .newArv .containerMedium img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 1px #333;
+  cursor: pointer;
+}
+.content .sale img {
+  width: 97%;
+  margin: 1.4%;
+}
+.content .sportWorkout {
+  position: relative;
+  margin: 1%;
+}
+.content .sportWorkout .wcKit {
+  margin: 0.4%;
+  width: 32%;
+  height: 65vh;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .content .sportWorkout .wcKit {
+    height: 45vh;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .content .sportWorkout .wcKit {
+    width: 98.5%;
+    height: auto;
+  }
+}
+.content .sportWorkout .workout {
+  margin: 0.4%;
+  width: 66%;
+  height: 65vh;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .content .sportWorkout .workout {
+    height: 45vh;
+    width: 65.5%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .content .sportWorkout .workout {
+    width: 98.5%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .content .sportWorkout .workout {
+    width: 65.5%;
+  }
+}
+.content .sportWorkout #spanWC {
+  position: absolute;
+  top: 65%;
+  left: 16%;
+  color: white;
+  font-family: 'Allerta Stencil';
+}
+@media only screen and (max-width: 599px) {
+  .content .sportWorkout #spanWC {
+    top: 39%;
+    left: 56%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .content .sportWorkout #spanWC {
+    font-size: 12px;
+  }
+}
+.content .sportWorkout #buttonWC {
+  position: absolute;
+  top: 72%;
+  left: 19%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px solid white;
+  border-style: double;
+  color: white;
+}
+@media only screen and (max-width: 599px) {
+  .content .sportWorkout #buttonWC {
+    top: 44%;
+    left: 63%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .content .sportWorkout #buttonWC {
+    font-size: 12px;
+  }
+}
+.content .sportWorkout #buttonWC:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px 1px #ffffff;
+}
+.content .sportWorkout #buttonWC a {
+  text-decoration: none;
+  color: white;
+}
+.content .sportWorkout #spanWO {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  color: white;
+  font-family: 'Allerta Stencil';
+}
+@media only screen and (max-width: 599px) {
+  .content .sportWorkout #spanWO {
+    top: 78%;
+    left: 10%;
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .content .sportWorkout #spanWO {
+    font-size: 12px;
+  }
+}
+.content .sportWorkout #buttonWO {
+  position: absolute;
+  top: 27%;
+  left: 47%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px solid white;
+  border-style: double;
+  color: white;
+}
+@media only screen and (max-width: 599px) {
+  .content .sportWorkout #buttonWO {
+    top: 82%;
+    left: 14%;
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .content .sportWorkout #buttonWO {
+    font-size: 12px;
+  }
+}
+.content .sportWorkout #buttonWO:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px 1px #ffffff;
+}
+.content .sportWorkout #buttonWO a {
+  text-decoration: none;
+  color: white;
+}
+.content .brands {
+  margin-top: 1%;
+}
+.content .brands h3 {
+  background-image: url('Images/strip.jpg');
+  overflow: hidden;
+  padding: 1.4%;
+  color: white;
+  text-align: center;
+}
+.content .brands img {
+  width: 15%;
+  height: 20vh;
+  margin-left: 13%;
+}
+@media only screen and (max-width: 599px) {
+  .content .brands img {
+    width: 97%;
+  }
+}
